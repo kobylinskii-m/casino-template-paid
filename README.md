@@ -32,6 +32,8 @@
 
 Set-up either a local mongoDB instance or create a [cloud-hosted instance](https://www.mongodb.com/). Save your db username + passsword and the mongoDb connection-string as you will need it for the next step.
 
+To interact with web3, you need to get a blockchain node. You can do this on the website [chainlist.org](https://chainlist.org/chain/97)
+
 ### Add a "local.env" file in the "/server/config" folder with the following entries
 
 ```
@@ -43,6 +45,9 @@ Set-up either a local mongoDB instance or create a [cloud-hosted instance](https
   SMTP_PORT=<YOUR_SMTP_PORT>
   SMTP_USER=<YOUR_SMTP_USER>
   SMTP_PW=<YOUR_SMTP_PASSWORD>
+  NODE_BLOCKCHAIN_HTTP_URL: <YOUR_NODE_BLOCKCHAIN_HTTP_URL>
+  NODE_BLOCKCHAIN_WS_URL: <YOUR_NODE_BLOCKCHAIN_WS_URL>
+  BLOCKCHAIN_ERC20_USDT_ADDRESS: <YOUR_BLOCKCHAIN_ERC20_USDT_ADDRESS>
 ```
 
 ### Set-up Contentful
